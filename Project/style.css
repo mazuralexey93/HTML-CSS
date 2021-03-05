@@ -1,3 +1,9 @@
+* {
+margin: 0;
+padding: 0;
+}
+
+
 html, body{
         font-family: sans-serif;
 }
@@ -5,6 +11,11 @@ html, body{
 .index_heading{
     font-size: 64px;
     color: #1F3F68;
+    width:  510px;
+}
+
+.hat_info .paragraph{
+    width: 425px;
 }
 
 .contacts_heading{
@@ -47,4 +58,55 @@ html, body{
     text-align: center;
     color: #FFFFFF;
     text-transform: uppercase;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.hat_menu ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.article{
+    width: 359px;
+}
+
+
+.topics{
+display: flex;
+    justify-content: space-between;
+    }
+
+.footer_info{
+    width: 495px;
+}
+.footer_info .simple_heading{
+    width: 340px;
+}
+
+.footer_bot ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts_top p{
+    text-align: center;
+}
+
+.container ul{
+    list-style-type: none;
+}
+
+.map_geoposition{
+width: 100%;
+}
+.contacts.container{    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
