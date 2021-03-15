@@ -13,7 +13,7 @@ html, body{
 }
 
 .hat_content{
-    height: 768px;
+    min-height: 768px;
     background: linear-gradient(0deg, #EBF3FB 8.84%, rgba(152, 195, 232, 0) 31.12%);
 }
 
@@ -40,6 +40,7 @@ html, body{
     background-image: url(img/hat_background.png);
     background-repeat: no-repeat;
     background-position: right center;
+    background-size: 44%;
 }
 
 .hat_info .paragraph{
@@ -295,3 +296,206 @@ width: 100%;
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
+
+.contacts_hat_info{
+    background-image: url(img/contacts_top_bg.png);
+    background-repeat: no-repeat;
+    height: 250px;
+}
+
+.contacts_heading{
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 74px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    padding-top: 24px;
+}
+
+.contacts_top_info .paragraph{
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: rgba(255, 255, 255, 0.6);
+
+}
+
+/* Adaptive for tablet */
+
+@media (max-width: 1024px) {
+    .container{
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    
+    .hat_info{
+        background-position: right 280px;
+    }
+
+    .topics{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .article{
+        margin-bottom: 32px;
+    }
+
+    .footer{
+         padding-top: 47px;
+    }
+
+    .footer_paragraph{
+        width: 336px;
+    }
+
+    .footer_top{
+        padding-bottom: 64px;
+        justify-content: space-evenly;
+    }
+
+    .footer_button{
+        padding: 3px 28px;
+        margin-top: 64px
+    }
+
+   .footer_contacts{    
+        min-height: 150px; 
+        flex-direction: column;
+    }
+
+    .footer .container{
+        width: 75%;
+    }
+}
+
+/* Adaptive for mobile */
+
+@media (max-width:667px){
+    .hat_content{
+        min-height: 376px;
+        padding-bottom: 41px;
+        box-sizing: border-box;
+    }
+
+    .hat_menu ul{
+        padding-top: 24px;
+    }
+
+    .hat_info{
+        padding-top: 36px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: none;
+    }
+
+    .index_heading{
+        width: 100%;
+        font-size: 32px;
+        line-height: 37px;
+        text-align: center;
+        margin-bottom: 12px;
+    }
+    
+    .hat_info .paragraph{
+        width: 100%;
+        text-align: center;
+    }
+
+    .hat_button{
+        font-size: 12px;
+        line-height: 26px;
+        padding: 0 8px;
+        margin-top: 32px;
+    }
+
+    .main_content {
+        padding-top: 48px;
+    }
+  
+    .simple_heading{
+        font-size: 24px;
+        line-height: 28px;
+    }
+    
+    .topics{
+        padding-top: 32px;
+    }
+
+    .article{
+        width: 100%;
+    }
+
+    .project_paragraph{
+        width: 100%;
+    }
+
+    .project_theme{
+        font-size: 16px;
+        line-height: 19px;
+        top: 16px;
+        right: 16px;
+    }
+
+    .container{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    
+    .project_parent{
+        flex-direction: column;
+        margin-top: 16px;
+    }
+    
+    .right_child{
+        margin-left: 0;
+        margin-top: 16px;
+    }
+
+    .footer{
+        margin-top: 64px;
+        margin-bottom: 0;
+        padding-top: 18px;
+         padding-bottom: 32px;
+    }
+
+    .footer .container{
+         width: 90%;
+    }
+    
+    .footer_top{
+        display: flex;
+        flex-flow: column;
+        padding-bottom: 40px;
+    }
+
+    .footer_info .simple_heading{
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+        margin: 18px 16px 32px 16px;
+        width: 75%;
+    }
+
+    .footer_paragraph{
+        text-align: center;
+        width: 100%;
+    }
+
+    .footer_button{
+        margin-top: 40px;
+    }
+
+    .footer_contacts{
+        margin-top: 32px;
+    }
+
+    .copyright .paragraph{
+        margin-top: 37px;
+    }
+}
+
