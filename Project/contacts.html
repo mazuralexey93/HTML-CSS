@@ -20,52 +20,58 @@
                     <li><a href="contacts.html"><img src="img/contacts_logo.svg" alt="contacts"></a></li>
                 </ul>
             </div>
-
-            <div class="contacts_hat_info">
-
-                <h2 class="contacts_heading">Contact Us</h2>
-                <p class="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad nemo exercitationem
-                    adipisci similique amet recusandae.</p>
-            </div>
         </div>
+        <div class="contacts_hat_info">
+
+            <h2 class="contacts_heading">Contact Us</h2>
+            <p class="container paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad nemo
+                exercitationem
+                adipisci similique amet recusandae.</p>
+        </div>
+
     </div>
 
     <!-- main content -->
     <div class="contacts container">
         <div class="contacts_main_content">
-            <img src="img/enlightened.jpg" alt="Beautiful logo">
+            <img class="contacts_img" src="img/contacts_servises.svg" alt="Beautiful logo">
             <div class="address">
-                <h4 class="small_heading">Address</h4>
+                <h4 class="small_heading">ADDRESS</h4>
                 <p class="paragraph">
                     Middle Earth, Isengard, Saruman's street, 1
                 </p>
             </div>
             <div class="phone">
-                <h4 class="small_heading">Phone</h4>
-                <ul>
-                    <li>+7 969 333 6633</li>
-                    <li>+7 999 444 6644</li>
+                <h4 class="small_heading">PHONE</h4>
+                <ul class="list_contacts">
+                    <li class="phones"><a class="links" href="tel:+79693336633">+7 (969) 333 6633</a></li>
+                    <li class="phones"><a class="links" href="tel:+79693336633">+7 (999) 444 6644</a></li>
                 </ul>
             </div>
             <div class="online_service">
-                <h4 class="small_heading">Online service</h4>
-                <ul>
-                    <li><a href="mailto://support@gmail.com" target="_blank"> support@gmail.com </a></li>
-                    <li><a href="tel:+79693336633">+7 (969) 333 6633</a> </li>
+                <h4 class="small_heading">ONLINE SERVICE</h4>
+                <ul class="list_contacts">
+                    <li class="links-to-us"><a class="links"
+                            href="https://firstprojectpls.000webhostapp.com/index.html">oursite.com</a>
+                    </li>
+                    <li class="links-to-us"><a class="links" href="mailto://support@gmail.com" target="_blank">
+                            support@gmail.com
+                        </a></li>
+
                 </ul>
             </div>
         </div>
         <div class="contacts_form">
             <form action="#">
-                <h4 class="small_heading">Send us message</h4>
-                <label for="fullname">Full name:<br></label>
-                <input class="input_area" id="fullname" type="text" size="40"
-                    placeholder="Aragorn, Dunadan man, son of Arathorn II and Gilraen, 16th chieftain of the Dúnedain of the North, direct descendant of Isildur, eldest son of Elendil and the last High King of Dúnedain, and the only legitimate heir to the throne of Gondor. The third and last person in the history of Middle-earth to marry an elven maiden - his wife and queen was Arwen Undomiel, daughter of Elrond. "></input><br>
+                <h4 class="small_heading">SEND US MESSAGE</h4>
+                <label class="labels" for="fullname">Full name<br></label>
+                <input class="input_area" id="fullname" type="text" placeholder="Your Name">
 
-                <label for="mailbox">Email:<br></label>
-                <input class="input_area" id="mailbox" type="email" placeholder="example@mail.com"><br>
-                <label>Message:<br> <textarea class="input_area" cols="40" rows="5"
-                        placeholder="Type message here..."></textarea></label><br>
+                <label class="labels" for="mailbox">Email<br></label>
+                <input class="input_area" id="mailbox" type="email" placeholder="Your Email"><br>
+
+                <label class="labels">Message<br> <textarea class="input_area" rows="3"
+                        placeholder="Your Message"></textarea></label><br>
                 <button class="buttons" type="submit">Submit</button>
                 <button class="buttons" type="reset">Clear</button>
             </form>
@@ -73,29 +79,36 @@
     </div>
     <div class="map_geoposition container">
         <script type="text/javascript" charset="utf-8" async
-            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af9fa36271317936428317cccd5fd028d0512d8a602dad36e01ea9ad92c8ac1c8&amp;width=100%&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af9fa36271317936428317cccd5fd028d0512d8a602dad36e01ea9ad92c8ac1c8&amp;width=100%&amp;height=480&amp;lang=ru_RU&amp;scroll=true"></script>
     </div>
     <!-- footer -->
     <div class="footer">
         <div class="container">
             <div class="footer_top">
                 <div class="footer_info">
-                    <h3 class="simple_heading">footer_heading</h3>
-                    <p class="paragraph">Dolorem odit esse eveniet tempore consectetur aliquam officia quis ex
+                    <h3 class="simple_heading">Interested to work
+                        with our team?</h3>
+                    <p class="paragraph footer_paragraph">Dolorem odit esse eveniet tempore consectetur aliquam officia
+                        quis ex
                         repellat.
                     </p>
                 </div>
+                <a href="#" class="footer_button">Let's Talk
+
+                </a>
             </div>
-            <!-- ____________________ -->
-            <hr>
+        </div>
+        <!-- ____________________ -->
+        <hr class="line">
+        <div class="container">
             <div class="footer_bot">
-                <ul class="footer_contacts">
-                    <li>По вопросам и предложениям: </li>
-                    <li>+7969 333 6633</li>
-                    <li>support@gmail.com</li>
-                </ul>
+                <ol class="footer_contacts">
+                    <li class="footer_list">Any questions or suggestions: Any questions or suggestions </li>
+                    <li class="footer_list">+7969 333 6633</li>
+                    <li class="footer_list">support@gmail.com</li>
+                </ol>
                 <div class="copyright">
-                    <p class="paragraph">&copy;Все права защищены</p>
+                    <p class="paragraph">&copy;2021 All rights reserved.</p>
                 </div>
             </div>
         </div>
