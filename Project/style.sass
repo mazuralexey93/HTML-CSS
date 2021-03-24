@@ -6,6 +6,14 @@ html, body
     font-family: sans-serif
     font: Roboto
 
+.wrapper
+    display: flex
+    flex-direction: column
+    min-height: 100vh
+
+.content
+    flex-grow: 1
+
 .container
     max-width: 1140px
     margin: 0 auto
@@ -434,6 +442,20 @@ html, body
     .footer .container
         width: 75%
 
+    .contacts.container
+        flex-direction: column
+        align-content: center
+        padding-bottom: 64px
+
+    .contacts_main_content
+        padding-left: 100px
+
+    .contacts_form .small_heading
+        width: 50%
+
+    .map_geoposition.container
+        padding: 0
+
 /* Adaptive for mobile */
 
 @media (max-width:667px)
@@ -536,3 +558,25 @@ html, body
 
     .copyright .paragraph
         margin-top: 32px
+
+    .contacts_heading
+        font-size: 24px
+        line-height: 28px
+
+    .container.paragraph
+        font-size: 16px
+        line-height: 30px
+        width: 90%
+
+    .contacts_main_content
+        padding-left: 24px
+
+    .contacts_form
+        min-width: 250px
+        max-width: 540px
+        width: 80%
+        padding: 36px
+
+    .contacts.container
+        padding-bottom: 32px
+        padding-top: 32px
